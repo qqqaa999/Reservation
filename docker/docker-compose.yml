@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  # MariaDB
+  reservation-local-db:
+    image: mariadb:latest
+    container_name: reservation-local-db
+    environment:
+      TZ: Asia/Seoul
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: reservation
+      MARIADB_USER: user
+      MARIADB_PASSWORD: passwrod
+    ports:
+      - "13306:3306"
