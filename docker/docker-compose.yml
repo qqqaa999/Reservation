@@ -10,6 +10,6 @@ services:
       MARIADB_ROOT_PASSWORD: root
       MARIADB_DATABASE: reservation
       MARIADB_USER: user
-      MARIADB_PASSWORD: passwrod
+      MARIADB_PASSWORD: password
     ports:
       - "13306:3306"
